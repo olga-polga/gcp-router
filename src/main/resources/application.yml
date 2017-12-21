@@ -1,0 +1,14 @@
+debug: false
+
+management:
+  security:
+    enabled: false
+
+server:
+  port: ${PORT:8765}
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    listable-repe: /repo/**
+    storage: /store/**
